@@ -12,6 +12,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<script src="scripts.js"></script>
+<audio id="hummer" src="hummer.mp3" preload="auto"></audio>
+<audio id="ball-drop" src="tennis-ball-drop.mp3" preload="auto"></audio>
+<audio id="rubix-cube" src="rubix-cube.mp3" preload="auto"></audio>
+<audio id="prop-plane" src="prop-plane.mp3" preload="auto"></audio>
+<audio id="jack-in-box" src="jack-boing.mp3" preload="auto"></audio>
 
     </head>
     <body>
@@ -36,18 +42,20 @@
         </div>
         <div class = "containertwo" id = "yellowHummer">
             <h3> Yellow Hummer SUV</h3>
-            <img src="car-img.jpeg" width="400px"> 
+            <img src="car-img.jpeg" width="400px" onmouseover="PlaySound('hummer')">
+            
            <div class="toyText">
             <a href="underconstruction.html"><caption><h5> More info...</h5></caption></a>
         </div>
         </div>
         <div class ="containertwo" id = "Tennis Ball">
             <h3> Tennis Ball</h3>
-            <img src="ball.jpeg" width="400px"> 
+            <img src="ball.jpeg" width="400px" onmouseover="PlaySound('ball-drop')"> 
            <div class="toyText">
             <a href="underconstruction.html"><caption><h5> More info...</h5></caption></a>
         </div>
     </div>
+
     <br/>
     <div class="smal-banner">
         <h2> Bestseller</h2>
@@ -55,13 +63,13 @@
     <br/><br/>
     <div id="gallery">
      <div class="column"><span>
-        <h4> Prop Plane </h4> <img src="plane.jpg" alt="Prop Plane" style="width:100%" height=225px><p> This is a toy prop plane yaddah yaddah</p> <a href ="underconstruction.html"> <p2>More info...</p2></a>
+        <h4> Prop Plane </h4> <img src="plane.jpg" alt="Prop Plane" style="width:100%" height=225px onmouseover="PlaySound('prop-plane')"><p> This is a toy prop plane yaddah yaddah</p> <a href ="underconstruction.html"> <p2>More info...</p2></a>
     </span></div>
     <div class="column"><span>
-    <h4> Rubix Cube </h4> <img src="rubix.jpg" alt="Rubix Cube" style="width:100%" height=225px><p> Speed Rubix nerds yaddah yaddah</p> <a href ="underconstruction.html"> <p2>More info...</p2></a>
-    </span></div>
+    <h4> Rubix Cube </h4> <img src="rubix.jpg" alt="Rubix Cube" style="width:100%" height=225px onmouseover="PlaySound('rubix-cube')"><p> Speed Rubix nerds yaddah yaddah</p> <a href ="underconstruction.html"> <p2>More info...</p2></a>
+  </span></div>
     <div class="column"><span>
-     <h4> Jack in the box </h4> <img src="jack-in-box.jpg" alt="Jack in the Box" style="width:100%" height=225px><p> SUPRISE yaddah yaddah</p> <a href ="underconstruction.html"> <p2>More info...</p2></a>
+     <h4> Jack in the box </h4> <img src="jack-in-box.jpg" alt="Jack in the Box" style="width:100%" height=225px onmouseover="PlaySound('jack-in-box')"><p> SUPRISE yaddah yaddah</p> <a href ="underconstruction.html"> <p2>More info...</p2></a>
     </span></div>
   </div>
 </div>
@@ -79,8 +87,6 @@
   <p> For more information and up to date top picks please join our newsletter</p>
   <button type="button">Sign up now</button>
  </div>
-
- <script src="./js/scripts.js"></script>
 
  <footer> Created in Partnership</footer>
     </body>
